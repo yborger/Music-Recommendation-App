@@ -1,16 +1,23 @@
+
+
 body{
+  display: flex;
   border: solid;
   border-color: gray;
   border-width: 2px;
   border-radius: 5px;
+  background: black;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 10px;
 }
 h1{
     font-family: 'Inter', sans-serif;
-    color: black;
-    text-align: center;
-    position: relative;
+    color: white;
     top: 5px;
     font-size: 25pt;
+    margin: auto;
+    padding: 15px;
 }
 #album-cover{
   display: block;
@@ -21,4 +28,27 @@ h1{
   border: solid;
   border-color: purple;
   border-radius: 10px;
+ 
+}
+.slider{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 10px;
+  border: 2px;
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin: auto;
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,purple,magenta);
+}
+
+.slider:hover{
+  opacity: 1;
+}
+
+
+div{
+  padding: 5px;
 }
